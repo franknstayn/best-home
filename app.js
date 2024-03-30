@@ -12,7 +12,7 @@ process.on("unhandledRejection", (error) => {
 
 if (cluster.isMaster) {
 
-    for (let i = 0; i < numCPUs; i++) {
+    for (let i = 0; i < 1; i++) {
         cluster.fork();
     }
 
